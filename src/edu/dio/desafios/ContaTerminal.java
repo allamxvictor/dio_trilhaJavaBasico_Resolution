@@ -1,5 +1,6 @@
 package edu.dio.desafios;
 
+
 public class ContaTerminal {
 	private int numeroDaConta;
 	private String agencia;
@@ -7,7 +8,14 @@ public class ContaTerminal {
 	private double saldo;
 	
 	public ContaTerminal() {
-		// TODO Auto-generated constructor stub
+		
+	}
+	
+	public ContaTerminal(int numeroDaConta, String agencia, String nomeDoCliente, double saldo) {
+		setNumeroDaConta(numeroDaConta);
+		setAgencia(agencia);
+		setNomeDoCliente(nomeDoCliente);
+		setSaldo(saldo);
 	}
 	
 	public int getNumeroDaConta() {
