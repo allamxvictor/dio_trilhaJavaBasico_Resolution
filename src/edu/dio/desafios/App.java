@@ -17,8 +17,10 @@ public class App {
 		int conta = scan.nextInt();
 		contaBancaria.setNumeroDaConta(conta);
 		
+		scan.nextLine();
+
 		System.out.println("Nome do cliente: ");
-		String nomeDoCliente = scan.next().trim();
+		String nomeDoCliente = scan.nextLine().trim();
 		contaBancaria.setNomeDoCliente(nomeDoCliente);
 		
 		System.out.println("Atualizar saldo: ");
@@ -27,10 +29,10 @@ public class App {
 		
 		System.out.println("Olá " + contaBancaria.getNomeDoCliente() +", obrigado por criar uma conta"
 				+ " em nosso banco, sua agência é " + contaBancaria.getAgencia() + ", conta "  + 
-				contaBancaria.getNumeroDaConta() + " e seu saldo " + contaBancaria.getSaldo() + 
+				contaBancaria.getNumeroDaConta() + " e seu saldo de " + contaBancaria.getSaldo() + 
 				" já está disponível para saque.");
 		
-		
+		scan.close();
 		
 		
 		
